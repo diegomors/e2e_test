@@ -1,16 +1,14 @@
 # e2e_test
 
-A new Flutter project.
+A simple end to end test.
 
-## Getting Started
+### Run Tests
 
-This project is a starting point for a Flutter application.
+[Setup your environment for integration_test](https://docs.flutter.dev/testing/integration-tests)
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+```
+# Start chromedriver
+$ chromedriver --port=4444
+# Run tests
+$ flutter drive --driver=test_driver/integration_test.dart --target=integration_test/template_test.dart -d web-server --release --browser-name=chrome
+```
