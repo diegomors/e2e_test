@@ -10,5 +10,5 @@ A simple end to end test.
 # Start chromedriver
 $ chromedriver --port=4444
 # Run tests
-$ flutter drive --driver=test_driver/integration_test.dart --target=integration_test/template_test.dart -d web-server --release --browser-name=chrome
+$ flutter drive --driver=test_driver/integration_test.dart --target=integration_test/template_test.dart -d chrome
 ```
